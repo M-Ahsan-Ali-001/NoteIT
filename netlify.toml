@@ -1,6 +1,6 @@
 [build]
 command = "CI= npm run build"
-
+  [plugins]
 package = "@newrelic/netlify-plugin"
 
   [plugins.inputs]
