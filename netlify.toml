@@ -1,2 +1,11 @@
 [build]
 command = "CI= npm run build"
+[[plugins]]
+package = "@newrelic/netlify-plugin"
+
+  [plugins.inputs]
+    newrelicAccountId = "4276515"
+    newrelicLicenseKey = "eu01xxcf538e4298ef79904e0238bc136057NRAL"
+    newrelicBrowserLicenseKey = "NRJS-729f8a20975e2a28482"
+    newrelicAppId = "4276515"
+    enableBrowserMonitoring = true
