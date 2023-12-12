@@ -93,3 +93,77 @@
     cursor: pointer;
     color: rgba(174, 174, 174, 0.8)
 }
+
+
+/* HomePage Styles */
+body {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    margin: 0;
+    overflow-y: hidden;
+}
+
+#home-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+}
+
+#all-notes {
+    /* overflow-y: scroll; */
+    flex: 0.5;
+}
+
+#all-notes h1 {
+    padding: 0px;
+    /* border: 1px solid yellow; */
+    margin-top: 8px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+    /* width: fit-content; */
+    text-align: justify;
+}
+
+#separator-horizontal {
+    /* background-color: green; */
+    width: 60%;
+    opacity: 0.3;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#separator-vertical {
+    height: 100vh;
+    padding: 1px;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+#selected-note {
+    flex: 0.5;
+    /* border: 1px solid red; */
+}
+
+#selected-note h1 {
+    padding: 0px;
+    /* border: 1px solid yellow; */
+    margin-top: 8px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+    /* width: fit-content; */
+    text-align: justify;
+}
+
+#note-cards {
+    padding: 16px;
+    height: 500px;
+    max-height: 100vh; 
+    overflow-y: auto;
+}
+
+.note-card {
+    background-color: rgb(40, 40, 40);
+    /* border: 1px solid #ddd; */
+    padding: 16px;
+    margin-bottom: 12px;
+}
