@@ -167,3 +167,19 @@ body {
     padding: 16px;
     margin-bottom: 12px;
 }
+
+#button-logout{
+height: 30px;
+margin-top: 20px;
+border-radius: 5px;
+background-color: rgb(15, 15, 15);
+color: wheat; 
+}
+
+.inline{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    
+    padding-right: 20px;
+}
