@@ -31,7 +31,7 @@ export default function HomePage({ setPage }) {
     const Call = async () => {
       try {
         const res = await axios.post(
-          "http://localhost:8888/.netlify/functions/display_notes",
+          "https://noteitnotes.netlify.app/.netlify/functions/display_notes",
           {
             email: cookies.email,
           }
@@ -106,7 +106,7 @@ const refresNotes = async( )=>{
 
     try {
         const res = await axios.post(
-          "http://localhost:8888/.netlify/functions/display_notes",
+          "https://noteitnotes.netlify.app/.netlify/functions/display_notes",
           {
             email: cookies.email,
           }
@@ -123,7 +123,7 @@ const refresNotes = async( )=>{
     } else {
       try {
         await axios.post(
-          "http://localhost:8888/.netlify/functions/user_notes_create",
+          "https://noteitnotes.netlify.app/.netlify/functions/user_notes_create",
           {
             email: cookies.email,
             tag: tag[0].value,
@@ -142,7 +142,7 @@ const refresNotes = async( )=>{
 
     try {
         await axios.post(
-          "http://localhost:8888/.netlify/functions/delete_note",
+          "https://noteitnotes.netlify.app/.netlify/functions/delete_note",
           {
             note_id:id
           }
@@ -164,7 +164,7 @@ const refresNotes = async( )=>{
     } else {
       try {
         await axios.post(
-          "http://localhost:8888/.netlify/functions/update_note",
+          "https://noteitnotes.netlify.app/.netlify/functions/update_note",
           {
             note_id:id,
             tag: tag[1].value,
