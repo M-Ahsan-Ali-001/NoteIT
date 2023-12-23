@@ -13,7 +13,7 @@ console.log(cookies.email)
 
     axios({
       method: 'post',
-      url: "http://localhost:8888/.netlify/functions/sing_in",
+      url: "https://noteitnotes.netlify.app/.netlify/functions/sing_in",
       headers: {},
       data: {
         email:cookies.email,password:cookies.pass
@@ -53,7 +53,7 @@ console.log(cookies.email)
     event.preventDefault(); 
     axios({
       method: 'post',
-      url: "http://localhost:8888/.netlify/functions/sing_in",
+      url: "https://noteitnotes.netlify.app/.netlify/functions/sing_in",
       headers: {},
       data: {
         email:email,password:pass
@@ -101,7 +101,7 @@ console.log(cookies.email)
 
 axios({
           method: 'post',
-          url: "http://localhost:8888/.netlify/functions/sign_up",
+          url: "https://noteitnotes.netlify.app/.netlify/functions/sign_up",
           headers: {},
           data: {
             email:email,password:pass

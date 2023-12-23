@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const { User_signup } = require('../../backend/schema/sign_up_schema.js');
-const mongoURI = "mongodb://0.0.0.0:27017/noteit";
+const mongoURI = "mongodb+srv://Anonymous:FOX.user786@spmnoteapp.ehlsydv.mongodb.net/";
 
 exports.handler = async function (event, context) {
   try {
