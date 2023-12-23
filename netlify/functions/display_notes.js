@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-const Prometheus = require('promes');
+// const Prometheus = require('promes');
 
-const prometheus = new Prometheus({ appName: 'noteTaking-app' });
+// const prometheus = new Prometheus({ appName: 'noteTaking-app' });
 const {  User_notes } = require('../../backend/schema/user_notes_schema.js');
 const mongoURI = "mongodb+srv://Anonymous:FOX.user786@spmnoteapp.ehlsydv.mongodb.net/";
 
@@ -9,11 +9,11 @@ exports.handler = async function(event, context) {
 
 
   
-  prometheus.observe({
-    functionName: context.functionName,
-    event,
-    context,
-  });
+  // prometheus.observe({
+  //   functionName: context.functionName,
+  //   event,
+  //   context,
+  // });
 
   
     // DB connection
