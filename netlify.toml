@@ -7,10 +7,10 @@ functions = "netlify/functions"
 [functions]
         node_bundler = "esbuild"
 
-[plugins]
+[[plugins]]
 
 package = "@newrelic/netlify-plugin"
- [[plugins.inputs]]
+ [plugins.inputs]
     newrelicAccountId = "4276515"
     newrelicLicenseKey = "eu01xxd96e8e4267e189ac7c9406ecbcFFFFNRAL"
     newrelicBrowserLicenseKey = "NRJS-729f8a20975e2a28482"
