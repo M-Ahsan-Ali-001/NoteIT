@@ -14,5 +14,5 @@ package = "@newrelic/netlify-plugin"
     newrelicAccountId = "4276515"
     newrelicLicenseKey = "eu01xxd96e8e4267e189ac7c9406ecbcFFFFNRAL"
     newrelicBrowserLicenseKey = "NRJS-729f8a20975e2a28482"
-    newrelicAppId = "NDI3NjUxNXxWSVp8REFTSEJPQVJEfGRhOjMxMTI4NQ"
+    newrelicAppId = "asd123"
     enableBrowserMonitoring = true
