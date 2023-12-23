@@ -1,10 +1,19 @@
 const mongoose = require('mongoose');
+const Prometheus = require('promes');
+
+const prometheus = new Prometheus({ appName: 'noteTaking-app' });
 const { User_signup } = require('../../backend/schema/sign_up_schema.js');
 const mongoURI = "mongodb+srv://Anonymous:FOX.user786@spmnoteapp.ehlsydv.mongodb.net/";
 
 exports.handler = async function (event, context) {
   try {
     await mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
+
+    prometheus.observe({
+      functionName: context.functionName,
+      event,
+      context,
+    });
 
     const { email, password } = JSON.parse(event.body);
 
