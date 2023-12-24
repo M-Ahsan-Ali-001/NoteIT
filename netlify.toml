@@ -7,7 +7,7 @@ functions = "netlify/functions"
 [functions]
         node_bundler = "esbuild"
 
-[[puglins]]
+[[plugins]]
 package = "@newrelic/netlify-plugin"
 
 [plugins.inputs]
